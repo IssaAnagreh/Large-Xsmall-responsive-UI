@@ -113,9 +113,14 @@ $(document).ready(function () {
       $("#scroll").addClass("reSlide");
       $("#backHeader").addClass("reSlide");
 
+      // auto container height
+      $("#container").height("auto")
+
       // show #svgBar
       // hide .scroll because the navbar will not be sticky without hiding it
+      // scroll up to the top
       setTimeout(function () {
+        window.scrollTo(0, 0);
         $("#svgBar").css("display", "block");
         $("#scroll").css("display", "none");
       }, 250);
@@ -126,6 +131,9 @@ $(document).ready(function () {
     ////////////////////////
     // figures click
     $("#figures").click(function () {
+      // scroll up to the top
+      window.scrollTo(0, 0);
+
       // prev screen
       // remove slideIn CSS animation class
       $("#leftSide").removeClass("slideIn");
@@ -153,10 +161,17 @@ $(document).ready(function () {
       $("#view2").css("display", "none");
       $("#view3").css("display", "none");
       $("#view4").css("display", "none");
+
+      // change height to suit the new view
+      $("#container").height($("#scroll").height())
     })
 
     // references click
     $("#references").click(function () {
+      
+      // scroll up to the top
+      window.scrollTo(0, 0);
+
       // prev screen
       // remove slideIn CSS animation class
       $("#leftSide").removeClass("slideIn");
@@ -184,10 +199,16 @@ $(document).ready(function () {
       $("#view1").css("display", "none");
       $("#view3").css("display", "none");
       $("#view4").css("display", "none");
+
+      // change height to suit the new view
+      $("#container").height($("#scroll").height())
     })
 
     // related click
     $("#related").click(function () {
+      // scroll up to the top
+      window.scrollTo(0, 0);
+
       // prev screen
       // remove slideIn CSS animation class
       $("#leftSide").removeClass("slideIn");
@@ -215,10 +236,16 @@ $(document).ready(function () {
       $("#view1").css("display", "none");
       $("#view2").css("display", "none");
       $("#view4").css("display", "none");
+
+      // change height to suit the new view
+      $("#container").height($("#scroll").height())
     })
 
     // info click
     $("#info").click(function () {
+      // scroll up to the top
+      window.scrollTo(0, 0);
+
       // prev screen
       // remove slideIn CSS animation class
       $("#leftSide").removeClass("slideIn");
@@ -246,6 +273,9 @@ $(document).ready(function () {
       $("#view1").css("display", "none");
       $("#view2").css("display", "none");
       $("#view3").css("display", "none");
+
+      // change height to suit the new view
+      $("#container").height($("#scroll").height())
     })
   }
 });
