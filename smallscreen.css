@@ -1,0 +1,278 @@
+/* Body Style */
+body {
+    display: block;
+    margin: 0px;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    margin: 0% !important;
+    padding: 0% !important;
+}
+
+/* Header/logo Title */
+#mainHeader {
+    position: -webkit-sticky;
+    position: sticky;
+    font-family: Arial;
+    top: 0px;
+    border-width: 0px;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    background-color: white;
+    z-index: 1;
+    height: 10%;
+    padding: 2%;
+
+}
+
+.logo {
+    width: 17.5%;
+    background-color: rgb(110, 110, 110);
+    padding: 1.5%;
+    color: white;
+    text-align: center;
+    font-size: 90%;
+}
+
+/* Header/back */
+#backHeader {
+    position: fixed;
+    font-family: Arial;
+    top: 0px;
+    border-width: 0px;
+    border-style: solid;
+    border-bottom-width: 1px;
+    z-index: 1;
+    background-color: white;
+    display: none;
+    top: 0px;
+    width: 100vw;
+    cursor: pointer;
+}
+
+.backLogo {    
+    padding: 1.5%;
+    background-color: white;
+    position: relative;
+    color: black;
+    text-align: left;
+    font-size: 100%;
+    width: 25%;
+    padding-left: 0px;
+    margin: 1.5%;
+}
+
+#backLogoImage {
+    width: 25px;
+    vertical-align: text-bottom;
+    margin-bottom: -3px;
+    margin-right: -5px;
+}
+
+/* Container */
+#container {
+    overflow-y: scroll;
+    height: auto;
+}
+
+/* liftSide column  */
+#leftSide {
+    font-family: "Times New Roman", Times, serif;
+    position: relative;
+    margin: 0px 2.5% 2.5% 2.5%;
+}
+
+.heading {
+    font-family: Arial;
+    width: 90%;
+}
+
+.author {
+    margin-left: 5px;
+}
+
+/* rightSide bar  */
+#rightSide {
+    font-family: Arial;
+    z-index: -1;
+}
+
+#svgBar {
+    width: 15px;
+    position: absolute;
+    top: 8%;
+    right: 0.25%;
+    right: 17px;
+}
+
+.barLogo img {
+    margin-top: 75%;
+    width: 175%;
+}
+
+.barLogo p {
+    display: none;
+}
+
+#scroll {
+    display: none;
+    position: absolute;
+    width: 90vw;
+    margin: 5%;
+    margin-top: 15%;
+    top: 0px;
+}
+
+#view1 {
+    display: none;
+}
+
+#view2 {
+    display: none;
+}
+
+#view3 {
+    display: none;
+}
+
+#view4 {
+    display: none;
+}
+
+#view1 img {
+    width: 100%;
+}
+
+#view1 p {
+    font-size: 10px;
+}
+
+/* Animation classes */
+.slide {
+    -webkit-animation: slide 0.5s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    /* Safari 4.0 - 8.0 */
+    animation: slide 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.reSlide {
+    -webkit-animation: reSlide 0.5s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    /* Safari 4.0 - 8.0 */
+    animation: reSlide 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.slideIn {
+    -webkit-animation: slideIn 0.5s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    /* Safari 4.0 - 8.0 */
+    animation: slideIn 0.5s;
+    /* animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
+}
+
+.slideOut {
+    -webkit-animation: slideOut 0.5s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    /* Safari 4.0 - 8.0 */
+    animation: slideOut 0.5s;
+    /* animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
+}
+
+/* Animations */
+@-webkit-keyframes slide {
+    from {
+        top: 0px;
+        left: 100vw;
+    }
+    to {
+        top: 0px;
+        left: 0vw;
+        
+    }
+}
+
+@keyframes slide {
+    from {
+        top: 0;
+        left: 100vw;
+    }
+    to {
+        top: 0;
+        left: 0vw;
+    }
+}
+
+@-webkit-keyframes reSlide {
+    from {
+        top: 0px;
+        left: 0vw;
+    }
+    to {
+        top: 0px;
+        left: 100vw;
+        
+    }
+}
+
+@keyframes reSlide {
+    from {
+        top: 0;
+        left: 0vw;
+    }
+    to {
+        top: 0;
+        left: 100vw;
+    }
+}
+
+@-webkit-keyframes slideOut {
+    from {
+        top: 0;
+        right: 0px;
+    }
+    to {
+        top: 0;
+        right: 100vw;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        top: 0;
+        right: 0px;
+    }
+    to {
+        top: 0;
+        right: 100vw;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    from {
+        top: 0;
+        right: 100vw;
+    }
+    to {
+        top: 0;
+        right: 0px;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        top: 0;
+        right: 100vw;
+    }
+    to {
+        top: 0;
+        right: 0px;
+    }
+}

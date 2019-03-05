@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Issa Anagreh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Large screen css file -->
+  <link rel="stylesheet" media="screen and (min-width: 601px)" href="main.css">
+  <!-- Xsmall screen css file -->
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+
+  <!-- Jquery library -->
+  <script src='http://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+  <!-- JS file for both screens -->
+  <script src="index.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav id="mainHeader">
+    <div class="logo"> LOGO </div>
+  </nav>
+  <nav id="backHeader">
+    <div class="backLogo"> <img id="backLogoImage" src="Assets/back.png" /> Back </div>
+  </nav>
+
+  <!-- Container of everything -->
+  <main id="container">
+
+    <div id="leftSide">
+      <h2 class="heading">Neque porro quisquam est qui dolorem ips quia dolor sit amet.</h2>
+      <br>
+      <div>
+        <a href="#">Author 1</a>,
+        <a class="author" href="#">Author 2</a>,
+        <a class="author" href="#">Author 3</a>
+      </div>
+      <br>
+      <h3>Abstarct</h3>
+      <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mauris dui, hendrerit id ante vitae,
+        pretium
+        efficitur libero. Ut a ex sapien. Fusce interdum blandit. Pellentesque ligula tortor,
+        ultricies ut eros quis, rhoncus viverra lacus. Nullam ut ullamcorper lectus. Nulla laoreet mauris justo, eu
+        <span><a href="#">calio</a></span> bibendum nisl volutpat quis.
+      </article>
+      <h3>Introduction</h3>
+      <article>
+        Lorem ipsum <span><a href="#">link</a></span> dolor sit amet, consectetur adipiscing elit. Proin mauris dui,
+        hendrerit id ante vitae, pretium
+        efficitur libero. Ut a ex sapien. Fusce rhoncus orci in ligula interdum blandit. Pellentesque ligula tortor,
+        ultricies ut eros quis, rhoncus viverra lacus. Nullam ut ullamcorper lectus. Nulla laoreet mauris justo, eu
+        bibendum nisl volutpat quis. Nunc augue sem, ultricies sit amet congue in, blandit sit amet urna. In quis justo
+        tortor. Mauris nisl tortor, <span><a href="#">link</a></span> quis augue sed, pulvinar consectetur nisi. Etiam
+        commodo quam lobortis,
+        convallis nunc ac, iaculis nibh.
+
+        Sed sed turpis nec dolor sagittis pulvinar. Donec a imperdiet orci, ut eleifend orci. In sed nunc lacinia ante
+        rhoncus aliquam. Nulla rhoncus lacinia mi, et pretium nisi pretium nec. Phasellus in maximus massa, id
+        convallis sapien. Morbi magna dui, dictum ac maximus vel, fermentum eu sapien. Duis a mauris sit amet enim
+        dapibus hendrerit ut in elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+        mus. Etiam elementum pharetra iaculis. Aliquam ornare orci lacus, gravida elementum tortor pulvinar vitae.
+        Donec fringilla ornare tincidunt. Mauris nec dui sit amet nunc finibus blandit. Phasellus pretium augue mi, at
+        semper tellus pellentesque rutrum. Nulla bibendum nec turpis et blandit. Mauris ac lobortis tellus. Praesent
+        finibus lacus et mauris dictum aliquam.
+
+        Vivamus sit amet placerat ligula, ac fermentum augue. Donec fermentum elit malesuada justo egestas scelerisque.
+        In tincidunt tincidunt magna vitae porta. Etiam scelerisque nisl a quam scelerisque, nec dignissim enim porta.
+        Curabitur sed velit facilisis, interdum felis semper, lacinia nisi. Proin placerat varius libero nec suscipit.
+        Maecenas convallis feugiat augue. Proin volutpat magna a quam ullamcorper, vitae mollis erat rhoncus. Vivamus
+        consectetur auctor mi, et molestie risus porta nec. Praesent hendrerit placerat ultrices.
+
+        Nunc vitae blandit lacus. Etiam mattis egestas arcu. Suspendisse egestas mauris eu dolor aliquam, non sodales
+        tellus sagittis. Duis blandit est a dui venenatis, at tincidunt nisi pretium. Suspendisse ullamcorper felis
+        lectus, sit amet auctor augue mollis vitae. Nam id sollicitudin mauris. Maecenas non commodo risus, vitae
+        condimentum dui. Nunc at risus urna. Pellentesque diam tortor, commodo eu dui ut, consectetur venenatis lorem.
+        Morbi dignissim auctor nisl in dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+        ultricies tellus sed dictum gravida. Proin scelerisque mauris nec ornare congue. Integer consectetur in lectus
+        in molestie.
+      </article>
+    </div>
+
+    <!-- Right sidebar -->
+    <div id="rightSide">
+      <!-- Right sidebar logos header  -->
+      <div id="svgBar">
+        <div id="figures" class="barLogo">
+          <img src="Assets/figures.svg" alt="figures"></svg>
+          <p>Figures</p>
+        </div>
+        <div id="references" class="barLogo">
+          <img src="Assets/references.svg" alt="references"></svg>
+          <p>References</p>
+        </div>
+        <div id="related" class="barLogo">
+          <img src="Assets/related.svg" alt="related"></svg>
+          <p>Related</p>
+        </div>
+        <div id="info" class="barLogo">
+          <img src="Assets/info.svg" alt="info"></svg>
+          <p>Details</p>
+        </div>
+      </div>
+
+      <!-- Scrolling part of sidebar -->
+      <div id="scroll">
+        <!-- View 1 -->
+        <div class="view" id="view1">
+          <img src="Assets/figure1.jpg" alt="figure1">
+          <p>
+            <strong>Fig. 1.</strong> Nunc vitae blandit lacus. Etiam mattis egestas arcu. Suspendisse egestas mauris eu
+            dolor aliquam,
+            non
+            sodales
+            tellus sagittis
+          </p>
+          <hr>
+          <br>
+          <br>
+          <img src="Assets/figure2.png" alt="figure2">
+          <hr>
+          <br>
+          <br>
+          <img src="Assets/figure3.png" alt="figure1">
+          <p>
+            <strong>Fig. 1.</strong> Nunc vitae blandit lacus. Etiam mattis egestas arcu. Suspendisse egestas mauris eu
+            dolor aliquam,
+            non
+            sodales
+            tellus sagittis
+          </p>
+        </div>
+        <!-- View 2 -->
+        <div class="view" id="view2">
+          <p>Lorem</p>
+          <hr>
+          <p>
+            <p class="underline">
+              vitae blandit lacus. Etiam mattis egestas arcu.</p>
+            <p class="underline">Suspendisse egestas mauris eu dolor aliquam, non sodales</p>
+            <p class="underline">Suspendisse ullamcorper
+              felis
+              lectus</p>
+          </p>
+          <br>
+          <p>Lorem</p>
+          <hr>
+          <p>
+            <p class="underline">
+              vitae blandit lacus. Etiam mattis egestas arcu.</p>
+            <p class="underline">Suspendisse egestas mauris eu dolor aliquam, non sodales</p>
+            tellus sagittis. Duis blandit est a dui venenatis, at tincidunt nisi pretium.
+            <p class="underline">Suspendisse ullamcorper
+              felis
+              lectus</p>
+          </p>
+        </div>
+        <!-- View 3 -->
+        <div class="view" id="view3">
+          <p>Title</p>
+          <hr>
+          <p>
+            <p class="underline">Vivamus sit amet placerat ligula, ac fermentum augue.</p>
+
+            <p class="underline">In tincidunt tincidunt magna vitae porta. Etiam scelerisque nisl a quam scelerisque,
+              nec dignissim enim
+              porta.</p>
+            <p class="underline">Curabitur sed velit facilisis</p>
+          </p>
+          <br>
+          <p>Title</p>
+          <hr>
+          <p>
+            Vivamus sit amet placerat ligula, ac fermentum augue. Donec fermentum elit malesuada justo egestas
+            scelerisque.
+            <p class="underline">In tincidunt tincidunt magna vitae porta. Etiam scelerisque nisl a quam scelerisque,
+              nec dignissim enim
+              porta.</p>
+            <p class="underline">
+              Curabitur sed velit facilisis</p>
+          </p>
+          <br>
+          <p>Title</p>
+          <hr>
+          <p>
+            <p class="underline">
+              Sed sed turpis nec dolor sagittis pulvinar. Donec a imperdiet orci, ut eleifend orci. In sed nunc lacinia
+              ante rhoncus aliquam. </p>
+            <p class="underline">
+              Nulla rhoncus lacinia mi, et pretium nisi pretium nec. Phasellus in maximus massa, id
+              convallis sapien. Morbi magna dui, dictum ac maximus vel, fermentum eu sapien. Duis a mauris sit amet
+              enim
+              dapibus hendrerit ut in elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus. </p>
+            <p class="underline">
+              Etiam elementum pharetra iaculis. Aliquam ornare orci lacus, gravida elementum tortor pulvinar vitae.
+              Donec fringilla ornare tincidunt</p>
+          </p>
+          <hr>
+        </div>
+        <!-- View 4 -->
+        <div class="view" id="view4">
+          <p>Lorem</p>
+          <hr>
+          <p>
+            <p class="underline">
+              Sed sed turpis nec dolor sagittis pulvinar. Donec a imperdiet orci, ut eleifend orci. In sed nunc lacinia
+              ante rhoncus aliquam. </p>
+            <p class="underline">
+              Nulla rhoncus lacinia mi, et pretium nisi pretium nec. Phasellus in maximus massa, id
+              convallis sapien. Morbi magna dui, dictum ac maximus vel, fermentum eu sapien. Duis a mauris sit amet
+              enim
+              dapibus hendrerit ut in elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus. </p>
+            <p class="underline">
+              Etiam elementum pharetra iaculis. Aliquam ornare orci lacus, gravida elementum tortor pulvinar vitae.
+              Donec fringilla ornare tincidunt</p>
+            <br>
+            <p>Lorem</p>
+            <hr>
+            <p>
+              <p class="underline">
+                Sed sed turpis nec dolor sagittis pulvinar. Donec a imperdiet orci, ut eleifend orci. In sed nunc
+                lacinia
+                ante rhoncus aliquam. </p>
+              <p class="underline">
+                Nulla rhoncus lacinia mi, et pretium nisi pretium nec. Phasellus in maximus massa, id
+                convallis sapien. Morbi magna dui, dictum ac maximus vel, fermentum eu sapien. Duis a mauris sit amet
+                enim
+                dapibus hendrerit ut in elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus. </p>
+              <p class="underline">
+                Etiam elementum pharetra iaculis. Aliquam ornare orci lacus, gravida elementum tortor pulvinar vitae.
+                Donec fringilla ornare tincidunt</p>
+              <br>
+              <p>Lorem</p>
+              <hr>
+              <p>
+                <p class="underline">
+                  Sed sed turpis nec dolor sagittis pulvinar. Donec a imperdiet orci, ut eleifend orci. In sed nunc
+                  lacinia
+                  ante
+                  rhoncus aliquam. Nulla rhoncus lacinia mi, et pretium nisi pretium nec. Phasellus in maximus massa,
+                  id
+                  convallis sapien. Morbi magna dui, dictum ac maximus vel, fermentum eu sapien. Duis a mauris sit amet
+                  enim
+                  dapibus hendrerit ut in elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus</p>
+                <p class="underline">
+                  mus. Etiam elementum pharetra iaculis. Aliquam ornare orci lacus, gravida elementum tortor pulvinar
+                  vitae.
+                  Donec fringilla ornare tincidunt</p>
+              </p>
+              <br>
+              <p>Lorem</p>
+              <hr>
+              <p>
+                <p class="underline">
+                  Nunc vitae blandit lacus. Etiam mattis egestasa arcu. Suspendisse egestas mauris eu dolor aliquam,
+                  non
+                  sodales</p>
+                <p class="underline">
+                  tellus sagittis</p>
+              </p>
+              <br>
+              <p>Lorem</p>
+              <hr>
+              <p>
+                Etiam mattis egestasa arcu. Suspendisse egestas mauris eu dolor aliquam,
+                non
+                sodales
+                tellus sagittis
+              </p>
+              <br>
+              <p>Lorem</p>
+              <hr>
+              <p>
+                <p class="underline">
+                  Sed sed turpis nec dolor sagittis pulvinar. Donec a imperdiet orci, ut eleifend orci. In sed nunc
+                  lacinia
+                  ante</p>
+                <p class="underline">
+                  rhoncus aliquam. Nulla rhoncus lacinia mi, et pretium nisi pretium nec. Phasellus in maximus massa,
+                  id
+                  convallis sapien. Morbi magna dui, dictum ac maximus vel, fermentum eu sapien. Duis a mauris sit amet
+                  enim
+                  dapibus hendrerit ut in elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus</p>
+                <p class="underline">
+                  mus. Etiam elementum pharetra iaculis. Aliquam ornare orci lacus, gravida elementum tortor pulvinar
+                  vitae.
+                  Donec fringilla ornare tincidunt</p>
+              </p>
+              <br>
+              <p>Lorem</p>
+              <hr>
+              <p>
+                <p class="underline">
+                  Sed sed turpis nec dolor sagittis pulvinar. Donec a imperdiet orci, ut eleifend orci. In sed nunc
+                  lacinia
+                  ante</p>
+                <p class="underline">
+                  rhoncus aliquam. Nulla rhoncus lacinia mi, et pretium nisi pretium nec. Phasellus in maximus massa,
+                  id
+                  convallis sapien. Morbi magna dui, dictum ac maximus vel, fermentum eu sapien. Duis a mauris sit amet
+                  enim
+                  dapibus hendrerit ut in elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus</p>
+                <p class="underline">
+                  mus. Etiam elementum pharetra iaculis. Aliquam ornare orci lacus, gravida elementum tortor pulvinar
+                  vitae.
+                  Donec fringilla ornare tincidunt</p>
+              </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
